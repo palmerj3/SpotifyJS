@@ -1,3 +1,5 @@
+var Spotify = {};			//Spotify namespace
+
 /* Spotify Metadata API Interface */
 Spotify.Metadata = function(){	
 	var oMetadata = {};		//public interface
