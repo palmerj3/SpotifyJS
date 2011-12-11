@@ -11,7 +11,7 @@ All querying functions are asynchronous so you must provide callbacks.
 
 ## Examples
 
-* Perform a basic search
+'''Perform a basic search'''
 
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.search('skrillex', function(responseData){
