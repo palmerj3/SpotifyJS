@@ -21,6 +21,7 @@ All querying functions are asynchronous so you must provide callbacks.
 	});
 
 **Search by artist**
+
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.search({method: 'artist', q: 'skrillex'}, function(responseData){
 		var responseData = JSON.parse(responseData);
@@ -29,6 +30,7 @@ All querying functions are asynchronous so you must provide callbacks.
 	});
 
 **Search by album**
+
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.search({method: 'album', q: 'skrillex'}, function(responseData){
 		var responseData = JSON.parse(responseData);
@@ -37,6 +39,7 @@ All querying functions are asynchronous so you must provide callbacks.
 	});
 
 **Search by track**
+
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.search({method: 'track', q: 'skrillex'}, function(responseData){
 		var responseData = JSON.parse(responseData);
@@ -45,6 +48,7 @@ All querying functions are asynchronous so you must provide callbacks.
 	});
 
 **Artist lookup** (requires an artist_id - see previous examples response data for reference - ex: 4YrKBkKSVeqDamzBPWVnSJ)
+
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.lookup({target: 'artist', id: '4YrKBkKSVeqDamzBPWVnSJ'}, function(responseData){
 		var responseData = JSON.parse(responseData);
@@ -53,6 +57,7 @@ All querying functions are asynchronous so you must provide callbacks.
 	});
 
 **Album lookup**
+
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.lookup({target: 'album', id: '6G9fHYDCoyEErUkHrFYfs4'}, function(responseData){
 		var responseData = JSON.parse(responseData);
@@ -61,6 +66,7 @@ All querying functions are asynchronous so you must provide callbacks.
 	});
 
 **Track lookup**
+
 	var spotify_metadata = new Spotify.Metadata();
 	spotify_metadata.lookup({target: 'track', id: '6NmXV4o6bmp704aPGyTVVG'}, function(responseData){
 		var responseData = JSON.parse(responseData);
